@@ -1,15 +1,75 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JOELDALTON.RU</title>
+    <!--ShortCut Icon-->
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon">
+    <!-- Styles -->
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
 
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 1);
-
-require_once 'app/header.php';
-?>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                     <span class="sr-only">Открыть навигацию</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a href="/" class="navbar-brand">JOEL DALTON BLOG</a>
+              </div>
+              <div class="collapse navbar-collapse" id="responsive-menu">
+<!-- КАТЕГОРИИ С БД   <ul class="nav navbar-nav">
+                      <?php
+                        $categories = get_categories($link);
+                      ?>
+                      <?php if(count($categories) === 0): ?>
+                      <li><a href="#">I♥VAPE</a></li>
+                      <?php else: ?>
+                      <?php
+                      //$i = 0;
+                      //  while($i <= 6971) {
+                      //      echo '<li><a href="#">Я ЕБУСЬ В СРАКОТАН</a></li>';
+                      //      $i++;
+                      //  }
+                      //   for($i =0; $i <= 4; $i++) {
+                      //      echo '<li><a href="#">Я ЕБУСЬ В СРАКОТАН</a></li>';
+                      //   }
+                      //
+                      ?>
+                      <?php foreach ($categories as $category): ?>
+                             
+                      <li><a href="/category.php?id=<?=$category[id]?>"><?=$category[title]?></a></li>
+                         
+                      <?php endforeach; ?>
+                      
+                      <?php endif; ?>
+                  </ul> -->
+                  <ul class="nav navbar-nav">
+                      <li><a href="blog">BLOG</a></li>
+                      <li><a href="art">ART</a></li>
+                      <li><a href="contact">CONTACT</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
 <!--    <div class="container">-->
 <!--        <div class="alert alert-danger">-->
            
-            <?php
+<!--->            <?php
 //             foreach($articles as $article) {
 //    что-то связанное с БД                         echo '<span><a href="/article.php?id='.$article[category_id].'">'.$article[category_title].'</a>'.' '.'</span>';
 //                         }
@@ -24,12 +84,87 @@ require_once 'app/header.php';
                     <p class="main-info-block-text">This is my blog. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus sed, temporibus debitis iusto, iste, quisquam quidem mollitia doloribus suscipit assumenda eum dolorem nemo saepe. Alias rem explicabo, facilis adipisci? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias necessitatibus, in, dolorum nostrum cum praesentium delectus, veritatis similique voluptatem sit reprehenderit asperiores mollitia quidem. Ratione ab assumenda quod delectus quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab impedit hic iusto doloremque saepe numquam, cum, magni eligendi porro iste in asperiores! Ipsam impedit numquam placeat. Totam, rem voluptatum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis alias sunt, officiis debitis quis sint fuga ullam qui quisquam dolore non recusandae voluptates libero nam porro, blanditiis. Doloremque reiciendis, rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus sed, temporibus debitis iusto, iste, quisquam quidem mollitia doloribus suscipit assumenda eum dolorem nemo saepe. Alias rem explicabo, facilis adipisci? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias necessitatibus, in, dolorum nostrum cum praesentium delectus, veritatis similique voluptatem sit reprehenderit asperiores mollitia quidem. Ratione ab assumenda quod delectus quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab impedit hic iusto doloremque saepe numquam, cum, magni eligendi porro iste in asperiores!</p>
                 </div>
                 <div class="col-md-3 main-info-block pull-right">
-                    <?php
-                        require 'app/sidebar.php';
-                    ?>
+                    <h3 class="main-info-block-text">INFO</h3>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?127"></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {redesign: 1, mode: 3, width: "220", height: "400", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 126966099);
+</script>
+<br>
                 </div>
             </div>
         </div>
-<?php
-require_once 'app/footer.php';
-?>
+         <div class="container" id="footer">
+          <hr>
+          <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li class="white-mycss">GitHub<li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact & support</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li class="white-mycss">Applications<li>
+                        <li><a href="#">Product for Mac</a></li>
+                        <li><a href="#">Product for Windows</a></li>
+                        <li><a href="#">Product for Eclipse</a></li>
+                        <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li class="white-mycss">Services<li>
+                        <li><a href="#">Web analytics</a></li>
+                        <li><a href="#">Presentations</a></li>
+                        <li><a href="#">Code snippets</a></li>
+                        <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li class="white-mycss">Documentation<li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Developer API</a></li>
+                        <li><a href="#">Product Markdown</a></li>
+                        <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                    <div class="col-xs-8">
+                        <ul class="list-unstyled list-inline pull-left">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="list-unstyled list-inline pull-left">
+                            <li class="vk-widget">
+                                <!-- МНЕ НРАВИТСЯ | ВК ВИДЖЕТ -->
+                                <script type="text/javascript" src="//vk.com/js/api/openapi.js?127"></script>
+                                <!-- VK Widget -->
+                                <div id="vk_subscribe"></div>
+                                <script type="text/javascript">
+                                VK.Widgets.Subscribe("vk_subscribe", {redesign: 1, soft: 1}, 368277840);
+                                </script>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <p class="text-muted pull-right">© Joel Dalton 2016. All rights reserved</p>
+                    </div>
+            </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="/public/js/bootstrap.min.js"></script>
+      </body>
+</html>
