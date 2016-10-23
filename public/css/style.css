@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Glegoo:400,700);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body {
+    background-color: aliceblue; 
+    background-image: url(/public/img/background.png);
+}
+
+#footer ul, li {                   /* Заголовки футера */
+    
+}
+
+#footer a {                        /* Ссылки футера */
+    
+}
+
+#footer p {                        /* Остальной текст футера */
+    
+}
+
+hr {
+    border: none;                  /* Убираем границу */
+    background-color: darkgray;    /* Цвет линии */
+    height: 1px;                   /* Толщина линии */
+}
+
+.main-info-block {
+    background-color: darkgray;
+    background-image: url(/public/img/background_block.png);
+    border-radius: 3px;
+}
+
+.main-info-block-text {
+    color: aliceblue;
+    font-family: 'Abel', sans-serif;
+}
+
+.vk-widget {
+    margin-left: 25px; 
+}
