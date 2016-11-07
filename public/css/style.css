@@ -20,26 +20,30 @@ body {
     
 }
 
-li {
+.li-normal {
     color: aliceblue;
     font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-li, a {
+.li-a-normal {
     color: aliceblue;
     text-decoration: none;
     font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-li, a:hover {
+.li-a-normal:hover {
     color: antiquewhite;
     text-decoration: none;
     font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-li, span {
+.li-span-normal {
     color: aliceblue;
     font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 hr {
@@ -70,7 +74,7 @@ hr {
     font-size: 32px;
 }
 .image-size {
-    height: 100px;
+    height: 300px;
 }
 
 .main-info-block-text-black {
@@ -83,4 +87,38 @@ hr {
     color: #0f0f0f;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 32px;
+}
+
+body > section {
+
+}
+poem {
+  text-align: center;
+  display: block;
+}
+poem > date,
+poem > title,
+poem > section,
+poem > section > verse {
+  display: block;
+}
+poem > date {
+  text-align: center;
+}
+poem > date:before {
+  content: "— ";
+}
+poem > date:after {
+  content: " —";
+}
+poem > title {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+poem > verse {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  white-space: pre;
 }
