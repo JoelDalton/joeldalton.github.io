@@ -74,6 +74,10 @@ hr {
     font-size: 32px;
 }
 .image-size {
+    height: 700px;
+}
+
+.image-size-pre {
     height: 300px;
 }
 
