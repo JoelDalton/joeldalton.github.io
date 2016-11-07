@@ -20,6 +20,28 @@ body {
     
 }
 
+li {
+    color: aliceblue;
+    font-size: 24px;
+}
+
+li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+li a:hover {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+li span {
+    color: aliceblue;
+    font-size: 24px;
+}
+
 hr {
     border: none;                  /* Убираем границу */
     background-color: darkgray;    /* Цвет линии */
@@ -44,6 +66,21 @@ hr {
 
 .main-info-block-text-h1 {
     color: aliceblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+}
+.image-size {
+    width: 200px;
+}
+
+.main-info-block-text-black {
+    color: #0f0f0f;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+}
+
+.main-info-block-text-h1-black {
+    color: #0f0f0f;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 32px;
 }
