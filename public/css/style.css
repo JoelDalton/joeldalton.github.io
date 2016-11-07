@@ -126,3 +126,7 @@ poem > verse {
   text-align: left;
   white-space: pre;
 }
+
+.space {
+    width: 50px;
+}
