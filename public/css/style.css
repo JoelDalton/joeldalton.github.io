@@ -138,8 +138,10 @@ poem > verse {
 
 .fix {
   font-size: 26px;
+  text-decoration: inherit;
 }
 
 .border-for-image {
-  border: 3px solid #33383c
+  border: 3px solid #33383c;
+  border-style: inherit;
 }
