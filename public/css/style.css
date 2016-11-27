@@ -130,3 +130,8 @@ poem > verse {
 .space {
     width: 50px;
 }
+
+.superclass {
+    height: 500px;
+    width: 256px;
+}
