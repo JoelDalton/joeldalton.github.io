@@ -6,7 +6,7 @@ RewriteBase /
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 
-RewriteRule ^([^.]+)\.html$ http://johndoloman.ru/$1 [R=301,L]
+RewriteRule ^([^.]+)\.html$ http://joeldalton.github.io/$1 [R=301,L]
 
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 
